@@ -57,92 +57,14 @@ body {
 .cf:after {
   clear: both;
 }
-
-h1 {
-  margin: 40px 0;
-  font-size: 30px;
-  font-weight: 300;
-  text-align: center;
-}
 </style>
 
 <div class="gallery cf">
-  <!--<div>
-  	<img src="/img/nailart/1_firstNailArt.jpg">
-  </div>
-  <div>
-    <img src="/img/nailart/2_secondNailArt.jpg">
-  </div>
-  <div>
-    <img src="/img/nailart/3_vinyls.jpg">
-  </div>
-  <div>
-    <img src="/img/nailart/4_gradient.jpg">
-  </div>
-  <div>
-    <img src="/img/nailart/5_ocean.jpg">
-  </div>
-  <div>
-  	<img src="/img/nailart/6_glitter.jpg">
-  </div>-->
   {% for file in site.static_files %}
 	{% if file.image %}
 		<div>
-			<img src="{{file.path}}" alt="{{file.name}}" >
+			<img src="{{file.path}}" alt="{{file.name}}" />
 		</div>
 	{% endif %}
 {% endfor %}
 </div>
-
-<!--
-Literally all the images in case I need this
-<img src="/img/nailart/1_firstNailArt.jpg" style="width:100%">
-<img src="/img/nailart/2_secondNailArt.jpg" style="width:100%">
-<img src="/img/nailart/3_vinyls.jpg" style="width:100%">
-<img src="/img/nailart/4_gradient.jpg" style="width:100%">
-<img src="/img/nailart/5_ocean.jpg" style="width:100%">
-<img src="/img/nailart/6_glitter.jpg" style="width:100%">
-<img src="/img/nailart/7_schwa.jpg" style="width:100%">
-<img src="/img/nailart/8_galaxy.jpg" style="width:100%">
-<img src="/img/nailart/9_gradient.jpg" style="width:100%">
-<img src="/img/nailart/10_gradient.jpg" style="width:100%">
-<img src="/img/nailart/11_watermarble.jpg" style="width:100%">
-<img src="/img/nailart/12_blue.jpg" style="width:100%">
-<img src="/img/nailart/13_fall.jpg" style="width:100%">
-<img src="/img/nailart/14_spider.jpg" style="width:100%">
-<img src="/img/nailart/15_cheetah.jpg" style="width:100%">
-<img src="/img/nailart/16_argyle.jpg" style="width:100%">
-<img src="/img/nailart/17_spraypaint.jpg" style="width:100%">
-<img src="/img/nailart/18_fun.jpg" style="width:100%">
-<img src="/img/nailart/19_madder.jpg" style="width:100%">
-<img src="/img/nailart/20_glitter.jpg" style="width:100%">
-<img src="/img/nailart/21_blood.jpg" style="width:100%">
-<img src="/img/nailart/22_vomit.jpg" style="width:100%">
-<img src="/img/nailart/23_popart.jpg" style="width:100%">
-<img src="/img/nailart/24_rainbow.jpg" style="width:100%">
-<img src="/img/nailart/25_turkey.jpg" style="width:100%">
-<img src="/img/nailart/26_fall.jpg" style="width:100%">
-<img src="/img/nailart/27_donut.jpg" style="width:100%">
-<img src="/img/nailart/28_cuba.jpg" style="width:100%">  
-<img src="/img/nailart/29_sunset.jpg" style="width:100%">
-<img src="/img/nailart/30_stamping.jpg" style="width:100%">
-<img src="/img/nailart/31_bees.jpg" style="width:100%">
-<img src="/img/nailart/32_french.jpg" style="width:100%">
-<img src="/img/nailart/33_rosegold.jpg" style="width:100%">
-<img src="/img/nailart/34_candy.jpg" style="width:100%">
-<img src="/img/nailart/35_christmas.jpg" style="width:100%">
-<img src="/img/nailart/36_christmas.jpg" style="width:100%">
-<img src="/img/nailart/36_rome.jpg" style="width:100%">
-<img src="/img/nailart/37_winter.jpg" style="width:100%">
-<img src="/img/nailart/38_glitter.jpg" style="width:100%">
-<img src="/img/nailart/39_heart.jpg" style="width:100%">
-<img src="/img/nailart/40_heart.jpg" style="width:100%">
-<img src="/img/nailart/41_cheetos.jpg" style="width:100%">
-<img src="/img/nailart/42_wnw.jpg" style="width:100%">
-<img src="/img/nailart/43_pride.jpg" style="width:100%">
-<img src="/img/nailart/44_dots.jpg" style="width:100%">
-<img src="/img/nailart/46_starrily.jpg" style="width:100%">
-<img src="/img/nailart/47_winter.jpg" style="width:100%">
-<img src="/img/nailart/48_christmas.jpg" style="width:100%">
-<img src="/img/nailart/49_reindeer.jpg" style="width:100%">
--->
