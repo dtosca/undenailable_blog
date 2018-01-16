@@ -4,212 +4,95 @@ title: Archives
 description: My pretty and ugly nail photo archive.
 ---
 <style>
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #e5e5e5;
 }
 
-div.gallery img {
-    width: 100%;
-    height: auto;
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
 }
 </style>
 
-<div class="gallery">
-	<img src="/img/nailart/1_firstNailArt.jpg" width="300" height="300">
-  <div class="desc">First nail art</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/2_secondNailArt.jpg" width="300" height="300">
-  <div class="desc">Classy Nails</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/3_vinyls.jpg" width="300" height="300">
-  <div class="desc">Ladybug vinyls</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/4_gradient.jpg" width="300" height="300">
-  <div class="desc">Messy Gradient</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/5_ocean.jpg" width="300" height="300">
-  <div class="desc">Ocean</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/6_glitter.jpg" width="300" height="300">
-  <div class="desc">Glitter</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/7_schwa.jpg" width="300" height="300">
-  <div class="desc">Schwa</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/8_galaxy.jpg" width="300" height="300">
-  <div class="desc">Galaxy</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/9_gradient.jpg" width="300" height="300">
-  <div class="desc">Gradient</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/10_gradient.jpg" width="300" height="300">
-  <div class="desc">Gradient</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/11_watermarble.jpg" width="300" height="300">
-  <div class="desc">Water Marble</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/12_blue.jpg" width="300" height="300">
-  <div class="desc">BLUE</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/13_fall.jpg" width="300" height="300">
-  <div class="desc">Fall</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/14_spider.jpg" width="300" height="300">
-  <div class="desc">Spiders</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/15_cheetah.jpg" width="300" height="300">
-  <div class="desc">Cheetahs</div>
-</div>
-
-<div class="gallery">
-	<img src="/img/nailart/16_argyle.jpg" width="300" height="300">
-  <div class="desc">Argyle lol</div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
-<div class="gallery">
-  <div class="desc"></div>
-</div>
-
+<div class="gallery cf">
+  <div>
+  	<img src="/img/nailart/1_firstNailArt.jpg">
+  </div>
+  <div>
+    <img src="/img/nailart/2_secondNailArt.jpg">
+  </div>
+  <div>
+    <img src="/img/nailart/3_vinyls.jpg">
+  </div>
+  <div>
+    <img src="/img/nailart/4_gradient.jpg">
+  </div>
+  <div>
+    <img src="/img/nailart/5_ocean.jpg">
+  </div>
+  <div>
+  	<img src="/img/nailart/6_glitter.jpg">
+  </div>
 </div>
 
 <!--
+Literally all the images in case I need this
 <img src="/img/nailart/1_firstNailArt.jpg" style="width:100%">
 <img src="/img/nailart/2_secondNailArt.jpg" style="width:100%">
 <img src="/img/nailart/3_vinyls.jpg" style="width:100%">
 <img src="/img/nailart/4_gradient.jpg" style="width:100%">
-
 <img src="/img/nailart/5_ocean.jpg" style="width:100%">
 <img src="/img/nailart/6_glitter.jpg" style="width:100%">
 <img src="/img/nailart/7_schwa.jpg" style="width:100%">
