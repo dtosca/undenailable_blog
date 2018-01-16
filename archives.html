@@ -87,7 +87,9 @@ h1 {
   </div>-->
   {% for file in site.static_files %}
 	{% if file.image %}
-		<img src="{{file.path}}" alt="{{file.name}}">
+		<div>
+			<img src="{{file.path}}" alt="{{file.name}}" >
+		</div>
 	{% endif %}
 {% endfor %}
 </div>
