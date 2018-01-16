@@ -3,68 +3,22 @@ layout: page
 title: Archives
 description: My pretty and ugly nail photo archive.
 ---
-<style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font: 14px/1 'Open Sans', sans-serif;
-  color: #555;
-  background: #e5e5e5;
-}
-
-.gallery {
-  width: 640px;
-  margin: 0 auto;
-  padding: 5px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,.3);
-}
-
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 5px;
-}
-
-.gallery > div > img {
-  display: block;
-  width: 200px;
-  transition: .1s transform;
-  transform: translateZ(0); /* hack */
-}
-
-.gallery > div:hover {
-  z-index: 1;
-}
-
-.gallery > div:hover > img {
-  transform: scale(1.7,1.7);
-  transition: .3s transform;
-}
-
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-}
-</style>
-
-<div class="gallery cf">
-  {% for file in site.static_files %}
-	{% if file.image %}
-		<div>
-			<img src="{{file.path}}" alt="{{file.name}}" height="200" width="200"/>
-		</div>
-	{% endif %}
-{% endfor %}
-</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Hoverbox Image Gallery</title>
+		<link rel="stylesheet" href='css/hoverbox.css' type="text/css" media="screen, projection" />
+	</head>
+	<body>
+		<ul class="hoverbox">
+			{% for file in site.static_files %}
+				{% if file.image %}
+					<li>
+						<a href="#"><img src="{{file.path}}" alt="d{{file.name}}" /><img src="{{file.path}}" alt="{{file.name}}" class="preview" /></a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</body>
+</html>
