@@ -67,7 +67,7 @@ h1 {
 </style>
 
 <div class="gallery cf">
-  <div>
+  <!--<div>
   	<img src="/img/nailart/1_firstNailArt.jpg">
   </div>
   <div>
@@ -84,7 +84,12 @@ h1 {
   </div>
   <div>
   	<img src="/img/nailart/6_glitter.jpg">
-  </div>
+  </div>-->
+  {% for file in site.static_files %}
+	{% if file.image %}
+		<img src="/nailart/{{file.path}}" alt="{{file.name}}">
+	{% endif %}
+{% endfor %}
 </div>
 
 <!--
