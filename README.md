@@ -9,4 +9,4 @@ Created using Bootstrap, Jekyll, and clean blog layout (https://startbootstrap.c
 Hosted on Github Pages.
 
 URL for site:
-https://tinyurl.com/undenailable
+undenailable.github.io
